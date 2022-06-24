@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {GridBoardComponent} from "./components/GridBoard/GridBoardComponent";
+import {NextBlockComponent} from "./components/NextBlock/NextBlockComponent";
+import {InfoBoardComponent} from "./components/InfoBoard/InfoBoardComponent";
+import {ControlsComponent} from "./components/Controls/ControlsComponent";
+import {MessageComponent} from "./components/Message/MessageComponent";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+
+            <GridBoardComponent />
+            <NextBlockComponent />
+            <InfoBoardComponent />
+            <ControlsComponent />
+            <MessageComponent />
+        </div>
+    );
 }
 
 export default App;
